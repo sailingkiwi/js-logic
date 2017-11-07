@@ -179,7 +179,14 @@ console.log(notEqual("bird", "cat"));
  * Console.log your result.
 */ 
 
-
+function spareChange(money){
+	if(money > 100){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(spareChange(200));
 
 /*
  * #9
