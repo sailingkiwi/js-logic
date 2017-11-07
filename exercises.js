@@ -29,7 +29,11 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 function canVote(age){
-	return (age >= 18);
+	if(age >= 18){
+	 return true;
+	}else{
+	 return false;
+	 } 
 }
 console.log(canVote(21));
  
@@ -44,7 +48,15 @@ console.log(canVote(21));
  * The function will return the message: "Login Success!", if the string passed into the function is "test1234"
  * Console.log your result.
 */
+/*function login(password){
+	if (password === test1234){
+	return "Login Success!";
+	}else{
 
+	}
+}
+console.log(login(test1234));
+*/
 
 /*
  * #3
