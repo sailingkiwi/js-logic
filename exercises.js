@@ -291,7 +291,7 @@ function moneyTrain(speed){
 		return "You are riding Honolulu's Rail.";
 	}else if(speed < 100){
 		return "You are riding an Amtrak.";
-	}else if(speed >= 100){
+	}else{
 		return "Now you ballin' in the Shinkansen!";
 	}
 }
@@ -311,6 +311,24 @@ console.log(moneyTrain(100));
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 50;
+var doughnutPrice = 4;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+ if(budget >= doughnutPrice){ 
+  budget -= doughnutPrice;
+  doughnutBought++;
+ }
+}
+
+buyDoughnut();
+console.log("budget ", budget);
+console.log("bought ", doughnutBought);
+buyDoughnut();
+console.log("budget ", budget);
+console.log("bought ", doughnutBought);
+
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
@@ -318,8 +336,7 @@ Inside the function, create a switch statement that will check the daily special
 
 
 /*
-For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
-
+For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again
 The for loop is made up for 3 parts:
 
 1) Initialization (i.e. var i = 0;)
