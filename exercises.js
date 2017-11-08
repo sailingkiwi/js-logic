@@ -413,7 +413,18 @@ for ( var cake = 0; cake<myFavFoods.length; cake++){
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
+var numArray = [18, 5, 32, 100, 7];
 
+function sumItUp(arr){
+	var total = 0;
+  for(var i = 0; i<arr.length; i++){
+    console.log(arr[i]);
+    total += arr[i]; 
+  }
+  return total;
+}
+
+console.log("sumItUp ", sumItUp(numArray));
 
 
 /*
